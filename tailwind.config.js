@@ -11,6 +11,10 @@ module.exports = {
         primaryColor: '#006963',
         secondaryColor: '#20ba77',
       },
+      width: {
+        '17': '4.5rem',
+        '38': '9.5rem',
+      },
       minWidth: {
         '1/2': '50%',
         '1/4': '25%',

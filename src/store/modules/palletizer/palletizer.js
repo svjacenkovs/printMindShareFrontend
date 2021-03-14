@@ -78,11 +78,12 @@ export default {
         }
       }
     },
-    // ---------------------------------------------CALCULATE ROWS ON PALLET------------------------------
-    async calculateRows(context, payload) {
+    // ---------------------------------------------CALCULATE PACKAGING------------------------------
+    async calculatePackaging(context, payload) {
       const request = {
         pallet: payload.pallet,
         product: payload.product,
+        packagingRules: payload.packagingRules,
       };
       try {
         const response = await axios.post(process.env.VUE_APP_BACKEND_URI + '/api/v1/palletizer/calculate', request, {
